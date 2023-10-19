@@ -1,9 +1,9 @@
 clc;clear;close all;
-N=20;
+N=40;
 n=(0:1:N-1);
-
+k=2;
 xn=cos(4.*pi.*(n./N));
-yn=cos(2.*pi.*(2./N).*n);
+yn=cos(2.*pi.*k.*(n./N));
 X_1_array=xn.*yn;
 X_1_sumArray=X_1_array;
 for i=2:1:length(X_1_sumArray)
@@ -14,19 +14,18 @@ end
 myFig=figure(1);
 myFig.Color=[1,1,1];
 subplot(2,1,1);
-plot(n,xn,"LineWidth",2);
+stem(n,xn,"LineWidth",2);
 hold on;
-plot(n,yn,"LineWidth",2);
+stem(n,yn,"LineWidth",2);
 lgd=legend("$x[n]$","$cos(2\pi\frac{k}{N}n)$");
 lgd.Interpreter="latex";
 ax=gca;
 ax.FontName="Times New Roman";
-ax.Title.String="k=1";
-
-
+titleText = sprintf('k=%d', k);
+ax.Title.String=titleText;
 
 subplot(2,1,2);
-plot(n,X_1_array,"LineWidth",2);
+stem(n,X_1_array,"LineWidth",2);
 hold on;
 plot(n,X_1_sumArray,"LineWidth",2);
 yline(0);
@@ -34,6 +33,7 @@ lgd=legend("product","integral value");
 lgd.Interpreter="latex";
 ax=gca;
 ax.FontName="Times New Roman";
-ax.Title.String="k=1";
+titleText = sprintf('k=%d', k);
+ax.Title.String=titleText;
 
-copygraphics(myFig, "Resolution", 600);
+copygraphics(gcf,"Resolution",300)
