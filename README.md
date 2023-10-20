@@ -2,7 +2,7 @@
  * @Author: aMoonRunner jhshe@foxmail.com
  * @Date: 2023-10-18 20:41:00
  * @LastEditors: aMoonRunner jhshe@foxmail.com
- * @LastEditTime: 2023-10-19 13:59:38
+ * @LastEditTime: 2023-10-20 09:46:01
  * @FilePath: \fourierTrans\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -57,7 +57,7 @@ $$
 $$x[n]=cos(4\pi\times\frac{n}{N})$$
 
 $X[1]$计算结果如下,$X_{cos}[1]=0$
-![图片加载失败](pictures/2023-10-18-22-34-40.png)
+![图片加载失败](/pictures/2023-10-18-22-34-40.png)
 $X[2]$计算结果如下,$X_{cos}[2]=10$
 ![图片加载失败](pictures/2023-10-18-22-53-38.png)
 $X[3]$计算结果如下,$X_{cos}[3]=0$
