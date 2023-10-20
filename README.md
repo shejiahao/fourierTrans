@@ -2,7 +2,7 @@
  * @Author: aMoonRunner jhshe@foxmail.com
  * @Date: 2023-10-18 20:41:00
  * @LastEditors: aMoonRunner jhshe@foxmail.com
- * @LastEditTime: 2023-10-20 11:35:28
+ * @LastEditTime: 2023-10-20 11:46:02
  * @FilePath: \fourierTrans\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -113,7 +113,9 @@ $X_{sin}[2]=-7.07$
 
 $X_{sin}[18]=7.07$
 
- <img src="pictures/2023-10-19-11-44-39.png" width = "50%" height = "50%" alt="图片名称" align=center />
+ <img  src="pictures/2023-10-19-11-44-39.png" width = "80%" height = "80%" alt="图片加载失败" />
+
+
 
 ![图片加载失败](pictures/2023-10-19-11-44-39.png)
 
