@@ -2,7 +2,7 @@
  * @Author: aMoonRunner jhshe@foxmail.com
  * @Date: 2023-10-18 20:41:00
  * @LastEditors: aMoonRunner jhshe@foxmail.com
- * @LastEditTime: 2023-10-20 10:03:38
+ * @LastEditTime: 2023-10-20 11:17:15
  * @FilePath: \fourierTrans\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -57,7 +57,9 @@ $$
 $$x[n]=cos(4\pi\times\frac{n}{N})$$
 
 $X[1]$计算结果如下,$X_{cos}[1]=0$
+
 ![图片加载失败](./pictures/2023-10-18-22-34-40.png)
+
 $X[2]$计算结果如下,$X_{cos}[2]=10$
 ![图片加载失败](./pictures/2023-10-18-22-53-38.png)
 $X[3]$计算结果如下,$X_{cos}[3]=0$
@@ -98,9 +100,10 @@ $X_{sin}[2]=-7.07$
 ![图片加载失败](pictures/2023-10-19-11-42-02.png)
 $X_{sin}[18]=7.07$
 ![图片加载失败](pictures/2023-10-19-11-44-39.png)
+
 > 注意，这里$X_{sin}[k]=-X_{sin}[N-k]$,也是因为根据$sin$的对称性$sin(\theta)=sin(2\pi-\theta)$ $$sin(2\pi\times k\frac{n}{N})=-sin(2\pi\times(N-k)\frac{n}{N})$$
 
-这时，cos项和sin项组合起来就能完整地表征原始信号了
+这时，cos 项和 sin 项组合起来就能完整地表征原始信号了
 幅值$$X[k]=\sqrt{(X_{cos}[k])^2+(X_{sin}[k])^2}$$
 $$X[2]=\sqrt{(X_{cos}[2])^2+(X_{sin}[2])^2}=10$$
 相位$$actan\frac{-(-0.707)}{0.707}=\pi/4$$
