@@ -2,7 +2,7 @@
  * @Author: aMoonRunner jhshe@foxmail.com
  * @Date: 2023-10-18 20:41:00
  * @LastEditors: aMoonRunner jhshe@foxmail.com
- * @LastEditTime: 2023-10-20 11:17:15
+ * @LastEditTime: 2023-10-20 11:18:19
  * @FilePath: \fourierTrans\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -61,14 +61,20 @@ $X[1]$计算结果如下,$X_{cos}[1]=0$
 ![图片加载失败](./pictures/2023-10-18-22-34-40.png)
 
 $X[2]$计算结果如下,$X_{cos}[2]=10$
+
 ![图片加载失败](./pictures/2023-10-18-22-53-38.png)
+
 $X[3]$计算结果如下,$X_{cos}[3]=0$
+
 ![图片加载失败](./pictures/2023-10-18-22-53-07.png)
+
 一直到$X_{cos}[19]$,$X_{cos}[19]=0$
+
 ![图片加载失败](./pictures/2023-10-18-22-51-59.png)
 
 > 非常奇怪，k=19 与 k=1 的效果是一模一样的,这是因为根据$cos$的对称性$cos(\theta)=cos(2\pi-\theta)$ $$cos(2\pi\times k\frac{n}{N})=cos(2\pi\times(N-k)\frac{n}{N})$$
 > 也可以这么理解，低频信号与高频信号是有交点的，$cos(2\pi\times 1t)$与$cos(2\pi\times 19t)$有很多交点，但是离散化之后，又恰巧把离散点取到了这些交点上，无法分辨这些点到底是哪条线上的，这也从另一个角度说明了为啥傅里叶变换是对称的，而且只有前面一半的是有用的，因为 k 取 19 时，无法判断到底时 1 触发的还是 19 触发的，干脆舍弃不用
+>
 > ![图片加载失败](pictures/2023-10-19-10-59-54.png)
 
 只有当$x[n]$中有此频率成分时，$X_{cos}[k]$才不为 0，剩下的，积分算出来全是 0
@@ -88,7 +94,9 @@ $X[3]$计算结果如下,$X_{cos}[3]=0$
 $$x[n]=cos(4\pi\times\frac{n}{N}+\frac{\pi}{4})$$
 
 不相关的项$X[0],X[1],X[3]···$依然是 0，对于$X_{cos}[2],X_{cos}[18]$则有了变化
+
 ![图片加载失败](pictures/2023-10-19-11-12-07.png)
+
 这个图像与原函数为$x(t)=0.707cos(4\pi x)$的效果是一样的，这种情况显然是不好的，无法分辨是本来原函数的幅值只有 0.707，还是因为相位的偏差导致算出来幅值为 0.707
 甚至当相位偏了$\pi/2$时
 ![图片加载失败](pictures/2023-10-19-11-14-26.png)
