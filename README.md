@@ -2,7 +2,7 @@
  * @Author: aMoonRunner jhshe@foxmail.com
  * @Date: 2023-10-18 20:41:00
  * @LastEditors: aMoonRunner jhshe@foxmail.com
- * @LastEditTime: 2023-10-20 11:18:19
+ * @LastEditTime: 2023-10-20 11:19:51
  * @FilePath: \fourierTrans\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -99,14 +99,19 @@ $$x[n]=cos(4\pi\times\frac{n}{N}+\frac{\pi}{4})$$
 
 这个图像与原函数为$x(t)=0.707cos(4\pi x)$的效果是一样的，这种情况显然是不好的，无法分辨是本来原函数的幅值只有 0.707，还是因为相位的偏差导致算出来幅值为 0.707
 甚至当相位偏了$\pi/2$时
+
 ![图片加载失败](pictures/2023-10-19-11-14-26.png)
+
 相位偏了$\pi$时
+
 ![图片加载失败](pictures/2023-10-19-11-15-21.png)
 也可以说上述只有 cos 的变换是不完善的，损失了某些信息，这就引入了 sin 项,用 cos 和 i\*sin 的组合，来不失真地进行转换
 
 $X_{sin}[2]=-7.07$
+
 ![图片加载失败](pictures/2023-10-19-11-42-02.png)
 $X_{sin}[18]=7.07$
+
 ![图片加载失败](pictures/2023-10-19-11-44-39.png)
 
 > 注意，这里$X_{sin}[k]=-X_{sin}[N-k]$,也是因为根据$sin$的对称性$sin(\theta)=sin(2\pi-\theta)$ $$sin(2\pi\times k\frac{n}{N})=-sin(2\pi\times(N-k)\frac{n}{N})$$
