@@ -35,4 +35,4 @@ ax.FontName="Times New Roman";
 titleText = sprintf('k=%d', k);
 ax.Title.String=titleText;
 
-copygraphics(gcf,"ContentType","image","Resolution",300);
+copygraphics(gcf,"ContentType","image","Resolution",200);
